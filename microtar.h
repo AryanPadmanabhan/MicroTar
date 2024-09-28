@@ -1,5 +1,5 @@
-#ifndef _MINITAR_H
-#define _MINITAR_H
+#ifndef _MICROTAR_H
+#define _MICROTAR_H
 #include "file_list.h"
 
 // Standard tar header layout defined by POSIX
@@ -61,7 +61,7 @@ int append_files_to_archive(const char *archive_name, const file_list_t *files);
 /*
  * Add the name of each file contained in the archive identified by 'archive_name'
  * to the 'files' list.
- * NOTE: This function is most obviously relevant to implementing minitar's list
+ * NOTE: This function is most obviously relevant to implementing microtar's list
  * operation, but think about how you can reuse it for the update operation.
  * This function should return 0 upon success or -1 if an error occurred.
  */
@@ -77,4 +77,4 @@ int get_archive_file_list(const char *archive_name, file_list_t *files);
  */
 int extract_files_from_archive(const char *archive_name);
 
-#endif    // _MINITAR_H
+#endif    // _microTAR_H

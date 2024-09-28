@@ -1,4 +1,4 @@
-#include "minitar.h"
+#include "microtar.h"
 
 #include <stdio.h>
 #include <string.h>
